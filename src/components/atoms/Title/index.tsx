@@ -3,7 +3,7 @@
 import React from 'react';
 
 interface TitleProps {
-	text: string;
+	text?: string;
 	span?: string;
 }
 

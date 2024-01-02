@@ -1,12 +1,22 @@
 @tailwind base;
 @tailwind components;
-* {
 
-  scroll-behavior: smooth;
-  
+
+body{
+
 }
 
 
 @tailwind utilities;
 
 
+* {
+
+  scroll-behavior: smooth;
+scroll-padding-block: 250px;
+scroll-margin: 280px;
+scroll-snap-stop: always;
+
+
+
+}

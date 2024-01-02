@@ -5,17 +5,14 @@ import Tag from '@/components/atoms/Tag';
 import Title from '@/components/atoms/Title';
 import Image from 'next/image';
 import React from 'react';
-import WhoImage from '@/../public/images/trabalhador_cruzando_bracos.png'
-
+import WhoImage from '@/../public/images/trabalhador_cruzando_bracos.png';
 
 export default function Who() {
 	return (
-		<Container>
+		<Container id='who'>
 			<>
-				<div
-					className='h-screen w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0'
-					id='who'></div>
-				<div className='flex justify-between w-full'>
+				<div className='h-full w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0 '></div>
+				<div className='flex justify-between w-full h-full'>
 					<div className='flex flex-col gap-5 w-1/2'>
 						<Tag>Transparência</Tag>
 						<Title
@@ -38,7 +35,11 @@ export default function Who() {
 						</p>
 					</div>
 					<div>
-						<Image src={WhoImage} width={480} height={480} alt='Trabalhador de máscara, cruzando os braços'></Image>
+						<Image
+							src={WhoImage}
+							width={480}
+							height={480}
+							alt='Trabalhador de máscara, cruzando os braços'></Image>
 					</div>
 				</div>
 			</>

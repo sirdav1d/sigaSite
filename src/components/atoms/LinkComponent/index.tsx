@@ -11,6 +11,6 @@ interface LinkProps {
 export default function LinkComponent({ text, href }: LinkProps) {
 
 	return (
-		<a className='font-title text-lg' href={href}>{text}</a>
+		<a className='font-title text-base' href={href}>{text}</a>
 	);
 }

@@ -17,6 +17,12 @@ const config: Config = {
 			backgroundImage: {
 				bgHero: "url('/images/interior-sala.png')",
 			},
+			boxShadow: {
+				BenefitsCard: '-20px -20px 40px 0px #FFF, 20px 20px 40px 0px #BEBEBE',
+			},
+			dropShadow: {
+				BenefitsIcon: '0px 0px 12px #BE4313',
+			},
 			colors: {
 				brand: {
 					blueSiga: {
@@ -35,6 +41,7 @@ const config: Config = {
 					},
 					neutralSiga: {
 						100: '#E8EBEA',
+						200: '#EFEBEB',
 						300: '#A3ADAC',
 						500: '#485C59',
 						700: '#1A3330',
