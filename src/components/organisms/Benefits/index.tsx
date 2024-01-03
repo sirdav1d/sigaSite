@@ -39,7 +39,7 @@ export default function Benefits() {
 	];
 	return (
 		<Container id='servs'>
-			<div className='flex flex-col  w-full'>
+			<div className='flex flex-col h-full w-full'>
 				<div className='flex flex-col gap-5 w-full'>
 					<Tag>Excelência</Tag>
 					<Title
@@ -52,7 +52,7 @@ export default function Benefits() {
 						de reforma.
 					</p>
 				</div>
-				<div className='flex flex-wrap justify-between gap-6 mt-12 w-full'>
+				<div className='flex flex-wrap justify-between gap-8 mt-10 w-full'>
 					{benefits.map((b, index) => {
 						return (
 							<BenefitsCard

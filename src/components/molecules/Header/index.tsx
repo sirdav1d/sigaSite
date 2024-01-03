@@ -29,7 +29,7 @@ export default function Header() {
 							height={24}
 							alt='Logo Whatsapp'></Image>
 					}>
-					Whatsapp
+					(11) 9866-5500
 				</Button>
 			</div>
 		</div>

@@ -1,9 +1,18 @@
-import React from 'react'
+/** @format */
 
+import React from 'react';
 
+interface TagProps {
+	children: React.ReactNode;
+	role?: string;
+}
 
-export default function Tag({children}:{children: React.ReactNode}) {
-  return (
-    <div className='text-sm drop-shadow-sm text-brand-blueSiga-500 font-title font-semibold'>{children}</div>
-  )
+export default function Tag({ children, role }: TagProps) {
+	return (
+		<div
+			data-role={role}
+			className='data-[role=projects]:text-brand-blueSiga-300 text-sm drop-shadow-sm text-brand-blueSiga-500 font-title font-semibold'>
+			{children}
+		</div>
+	);
 }
