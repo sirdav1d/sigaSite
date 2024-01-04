@@ -18,7 +18,9 @@ interface FeatureProps {
 
 export default function Feature(props: FeatureProps) {
 	return (
-		<Container role='feature'>
+		<Container
+			role='feature'
+			id={props.tag}>
 			<div
 				data-role={props.tag}
 				className='flex justify-between data-[role=Elegância]:flex-row-reverse items-center w-full'>

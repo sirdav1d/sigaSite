@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/molecules/Header';
+import Footer from '@/components/molecules/Footer';
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -14,7 +15,7 @@ const roboto = Roboto({
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
-	weight: ['300', '500', '700','800', '900'],
+	weight: ['300', '500', '700', '800', '900'],
 	display: 'swap',
 	variable: '--montserrat-title',
 });
@@ -42,6 +43,7 @@ export default function RootLayout({
 			<body className={`${montserrat.variable} ${roboto.variable}`}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

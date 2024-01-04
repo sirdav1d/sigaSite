@@ -10,7 +10,7 @@ import Comment from './Comment';
 
 export default function Proof() {
 	return (
-		<Container>
+		<Container id='proof'>
 			<>
 				<div className='h-full w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0 '></div>
 				<div className='flex flex-col gap-5'>
