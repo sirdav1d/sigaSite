@@ -1,25 +1,26 @@
 /** @format */
-'use client';
-import { Carousel } from 'flowbite-react';
-import Image from 'next/image';
-import React from 'react';
-import testImg from '@/../public/images/interior-sala.png';
-import { slides } from '@/constants/slides';
-import Slide from '../Slide';
 
-export default function Slider() {
+import { Carousel } from 'flowbite-react';
+import Slide from '../Slide';
+import { allGallerySigas, queryGallery, request } from '@/lib/datoCMS';
+
+export default async function Slider() {
+	const data: any = await request({ query: queryGallery });
+	const slides = data.allGallerySigas;
+
 	return (
-		<div className='w-full h-[320px] 2xl:h-[380px] mt-5'>
+		<div className='w-full mx-auto h-[320px] 2xl:h-[380px] mt-5'>
 			<Carousel
+				indicators
 				slideInterval={4000}
 				pauseOnHover>
-				{slides.map((s, index) => {
+				{slides.map((s: allGallerySigas) => {
 					return (
 						<Slide
-							img={s.img}
-							title={s.title}
-							description={s.description}
-							key={index}
+							img={s.imageGallerySiga.responsiveImage}
+							title={s.titleGallerySiga}
+							description={s.descriptionGallerySiga}
+							key={s.id}
 						/>
 					);
 				})}

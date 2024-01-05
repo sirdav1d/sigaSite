@@ -23,7 +23,7 @@ export default function Hero() {
 				</div>
 				<div className=' flex flex-col pt-20 text-white'>
 					<a
-						href='#who'
+						href='#benefits'
 						className='animate-bounce drop-shadow-sm'>
 						<SlArrowDown size={32} />
 					</a>

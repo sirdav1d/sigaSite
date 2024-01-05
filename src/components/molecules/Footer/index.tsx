@@ -57,27 +57,30 @@ export default function Footer() {
 							);
 						})}
 					</div>
-					<div className=' flex flex-col gap-5'>
+					<div className=' flex flex-col gap-3 items-center'>
+						<h2 className='font-title text-brand-neutralSiga-100 font-bold'>
+							Siga-nos Nas Redes Sociais
+						</h2>
 						<a
 							className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 							href='http://'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<BiLogoInstagramAlt size={48} />
+							<BiLogoInstagramAlt size={40} />
 						</a>
 						<a
 							className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 							href='http://'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<BiLogoFacebookSquare size={48} />
+							<BiLogoFacebookSquare size={40} />
 						</a>
 						<a
 							className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 							href='http://'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<BiLogoGmail size={48} />
+							<BiLogoGmail size={40} />
 						</a>
 					</div>
 				</div>

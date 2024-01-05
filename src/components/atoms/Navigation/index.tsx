@@ -6,9 +6,9 @@ import LinkComponent from '../LinkComponent';
 export default function Navigation() {
 	const links = [
 		{ text: 'Home', href: '#hero' },
-		{ text: 'Quem Somos', href: '#who' },
 		{ text: 'Serviços', href: '#servs' },
 		{ text: 'Projetos', href: '#projects' },
+		{ text: 'Quem Somos', href: '#who' },
 		{ text: 'FAQ', href: '#faq' },
 	];
 	return (

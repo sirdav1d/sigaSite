@@ -5,7 +5,8 @@ import Faq from '@/components/organisms/Faq';
 import Feature from '@/components/organisms/Feature';
 import Gallery from '@/components/organisms/Gallery';
 import Hero from '@/components/organisms/Hero';
-import Proof from '@/components/organisms/Proof';
+import Servs from '@/components/organisms/Servs';
+
 import Who from '@/components/organisms/Who';
 import { features } from '@/constants/features';
 
@@ -13,7 +14,7 @@ export default function Home() {
 	return (
 		<main className='overflow-x-hidden m-0 p-0'>
 			<Hero />
-			<Who />
+
 			<Benefits />
 			{features.map((f, index) => {
 				return (
@@ -28,8 +29,9 @@ export default function Home() {
 					/>
 				);
 			})}
+			<Servs />
 			<Gallery />
-			<Proof />
+			<Who />
 			<Faq />
 		</main>
 	);

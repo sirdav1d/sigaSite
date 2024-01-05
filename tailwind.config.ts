@@ -19,10 +19,10 @@ const config: Config = {
 				bgHero: "url('/images/interior-sala.png')",
 			},
 			boxShadow: {
-				BenefitsCard: '-20px -20px 40px 0px #FFF, 20px 20px 40px 0px #BEBEBE',
+				card: '-16px -16px 32px 0px #FDFDFD, 20px 20px 40px 0px #BEBEBE',
 			},
 			dropShadow: {
-				BenefitsIcon: '0px 0px 12px #BE4313',
+				icon: '0px 0px 12px #BE4313',
 			},
 			colors: {
 				brand: {

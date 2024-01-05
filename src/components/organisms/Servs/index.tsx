@@ -4,31 +4,31 @@ import Button from '@/components/atoms/Button';
 import Container from '@/components/atoms/Container';
 import Tag from '@/components/atoms/Tag';
 import Title from '@/components/atoms/Title';
-import React from 'react';
-import { proofs } from '@/constants/proofs';
-import Comment from './Comment';
+import Card from '@/components/molecules/Card';
+import { servs } from '@/constants/services';
 
-export default function Proof() {
+export default function Servs() {
 	return (
-		<Container id='proof'>
+		<Container id='servs'>
 			<>
 				<div className='h-full w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0 '></div>
 				<div className='flex flex-col gap-5'>
-					<Tag>Confiança</Tag>
+					<Tag>Qualidade</Tag>
 					<Title
-						text='O Que Dizem '
-						span='Sobre Nós'
+						text='Explore Nossas Soluções'
+						span='Profissionais'
 					/>
 				</div>
-				<div className='flex flex-col items-center w-full gap-20'>
-					<div className='flex justify-between mt-10 items-center w-full gap-12'>
-						{proofs.map((p, index) => {
+				<div className='flex flex-col items-center w-full gap-10'>
+					<div className='mt-4 gap-8 grid grid-cols-5'>
+						{servs.map((s, index) => {
 							return (
-								<Comment
+								<Card
+									role='servs'
 									key={index}
-									avatar={p.img}
-									text={p.text}
-									name={p.name}
+									title={s.title}
+									description={s.description}
+									icon={s.img}
 								/>
 							);
 						})}

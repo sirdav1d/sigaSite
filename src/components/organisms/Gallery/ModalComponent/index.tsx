@@ -3,7 +3,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Modal, Button } from 'flowbite-react';
-import Image from 'next/image';
+import { Image } from 'react-datocms';
 
 interface ModalComponentProps {
 	img: any;
@@ -32,13 +32,12 @@ export default function ModalComponent(props: ModalComponentProps) {
 				<Modal.Body className='bg-brand-blueSiga-700 w-full h-fit'>
 					<div className='w-full h-[2px] bg-white/10 opacity-15'> </div>
 					<Image
-						className='rounded-lg shadow-md h-[380px] object-cover'
-						src={props.img}
-						alt={props.title}
+						data={props.img}
+						className='max-h-[520px] object-contain rounded-lg object-center'
 					/>
 				</Modal.Body>
-				<Modal.Footer className='bg-brand-blueSiga-700'>
-					<p className='text-white prose prose-sm'>{props.description}</p>
+				<Modal.Footer className='bg-brand-blueSiga-700 w-full'>
+					<p className='text-white w-full '>{props.description}</p>
 				</Modal.Footer>
 			</Modal>
 		</>

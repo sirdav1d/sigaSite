@@ -12,7 +12,7 @@ export default function Who() {
 		<Container id='who'>
 			<>
 				<div className='h-full w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0 '></div>
-				<div className='flex justify-between w-full h-full'>
+				<div className='flex justify-between w-full h-full items-center'>
 					<div className='flex flex-col gap-5 w-1/2'>
 						<Tag>Transparência</Tag>
 						<Title
@@ -20,18 +20,21 @@ export default function Who() {
 							span={'Reformas de Qualidade'}></Title>
 						<p className='prose prose-lg'>
 							Somos uma empresa dedicada à arte de transformar espaços em
-							ambientes que contam histórias únicas. Como especialistas em
-							design de interiores e reformas completas, nosso compromisso está
-							enraizado na criação de lares e locais comerciais que não apenas
-							atendem às necessidades práticas, mas também refletem a identidade
-							e aspirações de nossos clientes.
+							ambientes que contam histórias únicas. Com uma trajetória marcada
+							por expertise e dedicação, nos tornamos referência no setor de
+							reformas unindo inovação, qualidade e comprometimento em cada
+							projeto que assumimos. Nossa equipe é composta por profissionais
+							especializados, prontos para entender e materializar a visão de
+							nossos clientes, garantindo resultados que não apenas atendam, mas
+							superem suas expectativas priorizando a integridade, transparência
+							e a entrega dentro dos prazos estabelecidos.
 							<br />
-							<br /> Desde a escolha dos materiais até a execução eficiente,
-							cada projeto é uma expressão de excelência em design, durabilidade
-							e satisfação do cliente. Somos mais que uma empresa de reformas;
-							somos parceiros na jornada de criar ambientes memoráveis, onde
-							cada detalhe faz a diferença. Siga conosco, e transforme sua visão
-							em realidade.
+							<br />
+							Na Siga Reformas e Pinturas, cada espaço é tratado com a
+							singularidade e cuidado que merece, assegurando que cada
+							transformação reflita a personalidade e necessidade de quem confia
+							em nosso trabalho. Convidamos você a conhecer mais sobre nossa
+							história e a fazer parte desta jornada de excelência em reformas.
 						</p>
 					</div>
 					<div>

@@ -2,12 +2,12 @@ export const faqs = [
 	{
 		title: 'Como posso solicitar um orçamento para minha reforma?',
 		description:
-			'Basta clicar em "Solicitar Orçamento" em nossa página inicial e nossa equipe entrará em contato para discutir os detalhes via whatsapp',
+			'Basta clicar em "Solicitar Orçamento" em nossa página inicial e nossa equipe entrará em contato para alinhar os detalhes via whatsapp',
 	},
 	{
 		title: 'Quais tipos de projetos a Siga Reformas realiza?',
 		description:
-			'Realizamos desde reformas completas até serviços específicos, como pintura, instalações elétricas, hidráulicas, marcenaria e marmoraria.',
+			'Realizamos desde reformas completas até serviços específicos como pinturas, instalações elétricas e hidráulicas, drywall, forro e gesso, instalação de pisos, impermeabilização de áreas molhadas, sistema de ar condicionado, sprinklers e alarme de incêndio, marcenaria e marmoraria',
 	},
 	{
 		title: 'Qual é o prazo médio para a conclusão de uma reforma?',
