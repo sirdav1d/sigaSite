@@ -67,31 +67,3 @@ export interface allGallerySigas {
 	};
 	id: string;
 }
-
-export interface DataGallery {
-	allGallerySigas: any;
-	data: {
-		allGallerySigas: [
-			{
-				titleGallerySiga: string;
-				descriptionGallerySiga: string;
-				imageGallerySiga: {
-					responsiveImage: {
-						alt: string | null;
-						aspectRatio: number;
-						base64: string;
-						height: number;
-						sizes: string;
-						src: string;
-						srcSet: string;
-						title: string | null;
-						webpSrcSet: string;
-						width: number;
-						__typename: string;
-					};
-				};
-				id: string;
-			},
-		];
-	};
-}

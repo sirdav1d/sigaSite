@@ -11,19 +11,19 @@ export default function Benefits() {
 	return (
 		<Container id='benefits'>
 			<div className='flex flex-col h-full w-full'>
-				<div className='flex flex-col gap-5 w-full'>
+				<div className='flex flex-col gap-5 w-full items-center xl:items-start'>
 					<Tag>Excelência</Tag>
 					<Title
 						text={'Descubra Nossas Vantagens '}
 						span='Exclusivas'
 					/>
-					<p className='prose prose-lg'>
+					<p className='prose lg:prose-lg prose-sm'>
 						De prazos cumpridos a soluções personalizadas, explore como cada
 						projeto conosco oferece benefícios que transformam sua experiência
 						de reforma.
 					</p>
 				</div>
-				<div className='flex flex-wrap justify-between gap-8 mt-10 w-full'>
+				<div className='flex flex-wrap xl:justify-between gap-8 mt-10 w-full justify-center'>
 					{benefits.map((b, index) => {
 						return (
 							<BenefitsCard

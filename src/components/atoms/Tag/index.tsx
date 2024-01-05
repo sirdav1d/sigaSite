@@ -11,7 +11,7 @@ export default function Tag({ children, role }: TagProps) {
 	return (
 		<div
 			data-role={role}
-			className='data-[role=projects]:text-brand-blueSiga-300 text-sm drop-shadow-sm text-brand-blueSiga-500 font-title font-semibold'>
+			className='data-[role=projects]:text-brand-blueSiga-300 lg:text-sm text-[10px] drop-shadow-sm text-brand-blueSiga-500 font-title font-semibold'>
 			{children}
 		</div>
 	);
