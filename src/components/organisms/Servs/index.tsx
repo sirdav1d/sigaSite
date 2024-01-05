@@ -12,7 +12,7 @@ export default function Servs() {
 		<Container id='servs'>
 			<>
 				<div className='h-full w-screen bg-brand-orangeSiga-100 absolute -z-10 left-0 top-0 '></div>
-				<div className='flex flex-col gap-5'>
+				<div className='flex flex-col gap-5 items-center w-full xl:items-start '>
 					<Tag>Qualidade</Tag>
 					<Title
 						text='Explore Nossas Soluções'
@@ -20,7 +20,7 @@ export default function Servs() {
 					/>
 				</div>
 				<div className='flex flex-col items-center w-full gap-10'>
-					<div className='mt-4 gap-8 grid grid-cols-5'>
+					<div className='mt-4 gap-8 grid md:grid-cols-3 grid-cols-1 xl:grid-cols-5'>
 						{servs.map((s, index) => {
 							return (
 								<Card

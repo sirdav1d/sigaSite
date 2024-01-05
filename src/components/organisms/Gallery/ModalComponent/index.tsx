@@ -24,20 +24,23 @@ export default function ModalComponent(props: ModalComponentProps) {
 				dismissible
 				className='backdrop-blur-md w-full'
 				show={openModal}
-				size={'3xl'}
 				onClose={() => setOpenModal(false)}>
 				<Modal.Header className='flex justify-between bg-brand-blueSiga-700'>
-					<h3 className='font-title font-bold text-white'>{props.title} </h3>
+					<h3 className='font-title font-bold text-white text-base lg:text-xl'>
+						{props.title}{' '}
+					</h3>
 				</Modal.Header>
 				<Modal.Body className='bg-brand-blueSiga-700 w-full h-fit'>
 					<div className='w-full h-[2px] bg-white/10 opacity-15'> </div>
 					<Image
 						data={props.img}
-						className='max-h-[520px] object-contain rounded-lg object-center'
+						className='lg:max-h-[520px] object-contain rounded-lg object-center h-[300px]'
 					/>
 				</Modal.Body>
 				<Modal.Footer className='bg-brand-blueSiga-700 w-full'>
-					<p className='text-white w-full '>{props.description}</p>
+					<p className='text-white w-full prose prose-sm lg:text-base'>
+						{props.description}
+					</p>
 				</Modal.Footer>
 			</Modal>
 		</>

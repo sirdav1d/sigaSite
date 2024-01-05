@@ -12,7 +12,7 @@ interface SlideProps {
 
 export default function Slide(props: SlideProps) {
 	return (
-		<div className='w-3/4 flex items-center h-full justify-center rounded-2xl relative object-bottom'>
+		<div className='lg:w-3/4 flex items-center h-full w-full justify-center rounded-2xl relative object-bottom'>
 			<Image
 				data={props.img}
 				className='h-[180%] w-full -translate-y-28'

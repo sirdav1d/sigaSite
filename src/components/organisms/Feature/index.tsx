@@ -23,18 +23,21 @@ export default function Feature(props: FeatureProps) {
 			id={props.tag}>
 			<div
 				data-role={props.tag}
-				className='flex justify-between data-[role=Elegância]:flex-row-reverse items-center w-full'>
-				<div className='flex flex-col w-1/2 gap-5'>
+				className='flex justify-between lg:data-[role=Elegância]:flex-row-reverse items-center w-full flex-col lg:flex-row'>
+				<div className='flex flex-col w-full gap-5 lg:w-1/2 items-center lg:items-start'>
 					<Tag>{props.tag}</Tag>
 					<Title
 						text={props.title}
 						span={props.spanTitle}
 					/>
-					<p className='prose prose-lg'>{props.description}</p>
+					<p className='prose lg:prose-lg prose-sm text-center lg:text-left'>
+						{props.description}
+					</p>
 					<Button href={props.linkBtn}>Contratar Serviço</Button>
 				</div>
 				<div>
 					<Image
+						className='mt-5 lg:mt-0 w-[320px] lg:w-[420px]'
 						src={props.image}
 						alt={'props.spanTitle'}
 						width={500}

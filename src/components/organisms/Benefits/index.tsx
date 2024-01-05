@@ -17,7 +17,7 @@ export default function Benefits() {
 						text={'Descubra Nossas Vantagens '}
 						span='Exclusivas'
 					/>
-					<p className='prose lg:prose-lg prose-sm'>
+					<p className='prose lg:prose-lg prose-sm text-center lg:text-left'>
 						De prazos cumpridos a soluções personalizadas, explore como cada
 						projeto conosco oferece benefícios que transformam sua experiência
 						de reforma.
