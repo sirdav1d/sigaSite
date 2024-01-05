@@ -9,8 +9,8 @@ import logoZap from '@/../../public/images/logoZap.svg';
 
 export default function Header() {
 	return (
-		<div className=' fixed z-50 top-0 w-screen left-0 py-3 bg-brand-neutralSiga-900/60 backdrop-blur-sm border-b border-brand-neutralSiga-100/30'>
-			<div className='max-w-7xl flex w-full justify-between items-center mx-auto'>
+		<div className=' fixed z-50 top-0 w-screen left-0 py-3 bg-brand-neutralSiga-900/75 lg:bg-brand-neutralSiga-900/60 backdrop-blur-sm border-b border-brand-neutralSiga-100/30'>
+			<div className='max-w-7xl flex w-full lg:justify-between items-center justify-around gap-8 mx-auto'>
 				<a href='/'>
 					<Image
 						src={logoHeader}

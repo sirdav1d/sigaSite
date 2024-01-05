@@ -12,7 +12,7 @@ export default function Navigation() {
 		{ text: 'FAQ', href: '#faq' },
 	];
 	return (
-		<ul className='flex flex-col md:flex-row gap-5'>
+		<ul className=' flex-col md:flex-row gap-5 hidden lg:flex'>
 			{links.map((link, index) => {
 				return (
 					<li
