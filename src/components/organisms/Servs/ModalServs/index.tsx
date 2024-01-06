@@ -25,7 +25,9 @@ export default function ModalServs(props: ModalComponentProps) {
 				size={'3xl'}
 				show={openModal}
 				onClose={() => setOpenModal(false)}>
-				<Modal.Header>{props.alt}</Modal.Header>
+				<Modal.Header>
+					<h2 className='font-title font-bold text-xl'> {props.alt}</h2>
+				</Modal.Header>
 				<Modal.Body className='bg-transparent w-full h-full'>
 					<div className='w-full h-[2px] bg-white/10 opacity-15'> </div>
 					<Image
