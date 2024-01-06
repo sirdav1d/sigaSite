@@ -17,7 +17,7 @@ export default function ModalComponent(props: ModalComponentProps) {
 	return (
 		<>
 			<Button
-				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] w-[60px] p-1 bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg scale-105 z-50'
+				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] w-[60px] p-1 bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg z-50'
 				onClick={() => setOpenModal(true)}>
 				<FaExternalLinkAlt size={20} />
 			</Button>

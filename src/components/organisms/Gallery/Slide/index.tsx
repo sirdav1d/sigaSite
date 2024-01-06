@@ -17,7 +17,7 @@ export default function Slide(props: SlideProps) {
 				data={props.img}
 				className='w-full h-full lg:h-auto object-contain'
 			/>
-			<div className='absolute top-[20px] right-[20px] flex items-center justify-center w-1/5 h-1/5'>
+			<div className='absolute top-[20px] right-[68px] flex items-center justify-center '>
 				<ModalComponent
 					img={props.img}
 					title={props.title}

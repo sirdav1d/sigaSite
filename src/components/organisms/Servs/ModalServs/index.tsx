@@ -15,7 +15,7 @@ export default function ModalServs(props: ModalComponentProps) {
 	return (
 		<>
 			<Button
-				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] bg-left text-xl w-[800px]  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg '
+				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] bg-left text-xl w-[380px]  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg '
 				onClick={() => setOpenModal(true)}>
 				Saiba Mais
 			</Button>
