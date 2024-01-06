@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'flowbite-react';
 import { Image } from 'react-datocms';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 interface ModalComponentProps {
 	img: any;
@@ -16,12 +17,13 @@ export default function ModalComponent(props: ModalComponentProps) {
 	return (
 		<>
 			<Button
-				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg scale-105'
+				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] w-[60px] p-1 bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg scale-105 z-50'
 				onClick={() => setOpenModal(true)}>
-				Saiba Mais
+				<FaExternalLinkAlt size={20} />
 			</Button>
 			<Modal
 				position={'center'}
+				size={'5xl'}
 				dismissible
 				className='backdrop-blur-md w-full'
 				show={openModal}

@@ -21,7 +21,8 @@ export default function ModalServs(props: ModalComponentProps) {
 			</Button>
 			<Modal
 				dismissible
-				className='backdrop-blur-md w-full'
+				className='backdrop-blur-md w-full h-full'
+				size={'3xl'}
 				show={openModal}
 				onClose={() => setOpenModal(false)}>
 				<Modal.Header>{props.alt}</Modal.Header>

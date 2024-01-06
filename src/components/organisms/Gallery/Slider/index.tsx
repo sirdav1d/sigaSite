@@ -9,7 +9,7 @@ export default async function Slider() {
 	const slides = data.allGallerySigas;
 
 	return (
-		<div className='w-full mx-auto lg:h-[320px] 2xl:h-[400px] mt-5 h-[260px]'>
+		<div className='w-full mx-auto lg:h-[320px] 2xl:h-[400px] mt-5 h-[288px]'>
 			<Carousel
 				indicators
 				slideInterval={4000}

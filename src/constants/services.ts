@@ -11,16 +11,16 @@ import serv08 from '@/../public/icons/servs/detector-de-fumaca.png';
 import serv09 from '@/../public/icons/servs/renovacao.png';
 import serv10 from '@/../public/icons/servs/drywall.png';
 
-import pinturaImage from '@/../public/images/servs/pintura_up.jpeg';
-import forroImage from '@/../public/images/servs/forro_gesso_up.jpeg';
-import eletricaImage from '@/../public/images/servs/eletrica_up.jpeg';
-import hidraulicaImage from '@/../public/images/servs/hidraulica_up.jpeg';
-import pisosImage from '@/../public/images/servs/Pisos_up.jpeg';
-import marcenariaImage from '@/../public/images/servs/marcenaria_up.jpeg';
-import arCondicionadoImage from '@/../public/images/servs/ar_condicionado_up.jpeg';
-import alarmeImage from '@/../public/images/servs/alarme_up.jpeg';
-import reformaImage from '@/../public/images/servs/reforma_geral_up.jpeg';
-import drywallImage from '@/../public/images/servs/drywall_up.jpeg';
+import pinturaImage from '@/../public/images/servs/pintura_up.webp';
+import forroImage from '@/../public/images/servs/forro_gesso_up.webp';
+import eletricaImage from '@/../public/images/servs/eletrica_up.webp';
+import hidraulicaImage from '@/../public/images/servs/hidraulica_up.webp';
+import pisosImage from '@/../public/images/servs/Pisos_up.webp';
+import marcenariaImage from '@/../public/images/servs/marcenaria_up.webp';
+import arCondicionadoImage from '@/../public/images/servs/ar_condicionado_up.webp';
+import alarmeImage from '@/../public/images/servs/alarme_up.webp';
+import reformaImage from '@/../public/images/servs/reforma_geral_up.webp';
+import drywallImage from '@/../public/images/servs/drywall_up.webp';
 
 export const servs = [
 	{
