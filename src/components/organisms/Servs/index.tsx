@@ -24,6 +24,7 @@ export default function Servs() {
 						{servs.map((s, index) => {
 							return (
 								<Card
+									cover={s.cover}
 									role='servs'
 									key={index}
 									title={s.title}
@@ -33,9 +34,6 @@ export default function Servs() {
 							);
 						})}
 					</div>
-					<Button href='https://api.whatsapp.com/send?phone=551198665500&text=Ol%C3%A1!%20Estava%20na%20sua%20Landing%20Page%20e%20vi%20bons%20coment%C3%A1rios.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento'>
-						Reformar Agora
-					</Button>
 				</div>
 			</>
 		</Container>

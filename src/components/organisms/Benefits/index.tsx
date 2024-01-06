@@ -4,7 +4,7 @@ import Container from '@/components/atoms/Container';
 import Tag from '@/components/atoms/Tag';
 import Title from '@/components/atoms/Title';
 import React from 'react';
-import BenefitsCard from '../../molecules/Card';
+import BenefitsCard from '@/components/molecules/Card';
 import { benefits } from '@/constants/benefits';
 
 export default function Benefits() {

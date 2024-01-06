@@ -7,8 +7,8 @@ import { Image } from 'react-datocms';
 
 interface ModalComponentProps {
 	img: any;
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 }
 
 export default function ModalComponent(props: ModalComponentProps) {
@@ -16,11 +16,12 @@ export default function ModalComponent(props: ModalComponentProps) {
 	return (
 		<>
 			<Button
-				className='bg-gradient-to-r w-fit from-brand-blueSiga-500 bg-[length:380px_400px] bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg scale-105'
+				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg scale-105'
 				onClick={() => setOpenModal(true)}>
 				Saiba Mais
 			</Button>
 			<Modal
+				position={'center'}
 				dismissible
 				className='backdrop-blur-md w-full'
 				show={openModal}
@@ -30,11 +31,11 @@ export default function ModalComponent(props: ModalComponentProps) {
 						{props.title}{' '}
 					</h3>
 				</Modal.Header>
-				<Modal.Body className='bg-brand-blueSiga-700 w-full h-fit'>
+				<Modal.Body className='bg-brand-blueSiga-700 w-full h-full'>
 					<div className='w-full h-[2px] bg-white/10 opacity-15'> </div>
 					<Image
 						data={props.img}
-						className='lg:max-h-[520px] object-contain rounded-lg object-center h-[300px]'
+						className='lg:h-auto w-full rounded-lg h-[300px]'
 					/>
 				</Modal.Body>
 				<Modal.Footer className='bg-brand-blueSiga-700 w-full'>

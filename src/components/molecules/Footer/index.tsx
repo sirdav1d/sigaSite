@@ -46,19 +46,19 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-					<div className='grid lg:grid-cols-2  gap-4 lg:w-1/3 w-full '>
+					<div className='grid lg:grid-cols-2  gap-4 lg:w-1/2 w-full '>
 						{siteMap.map((s, index) => {
 							return (
 								<a
 									href={s.href}
-									className='text-brand-neutralSiga-200 text-sm lg:text-base hover:text-brand-blueSiga-300 transition-all duration-300 ease-in-out font-title'
+									className='text-brand-neutralSiga-200 text-sm  hover:text-brand-blueSiga-300 transition-all duration-300 ease-in-out font-title'
 									key={index}>
 									{s.text}
 								</a>
 							);
 						})}
 					</div>
-					<div className='flex flex-col gap-3 lg:w-1/3 w-full'>
+					<div className='flex flex-col gap-3 lg:w-1/5 w-full'>
 						<h2 className='font-title text-brand-neutralSiga-100 font-bold text-center'>
 							Siga-nos Nas Redes Sociais
 						</h2>
@@ -95,7 +95,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className='w-full h-[2px] rounded-full bg-white/40 my-4 lg:mt-10 lg:mb-5'></div>
-				<div className='w-full flex justify-between text-brand-neutralSiga-200 font-title font-bold text-[9px] gap-2 items-center lg:text-xs flex-col lg:flex-row'>
+				<div className='w-full flex justify-between text-brand-neutralSiga-200 font-title font-bold text-[9px] gap-2 items-center lg:text-xs flex-col md:flex-row'>
 					<p>
 						Desenvolvido por{' '}
 						<a
