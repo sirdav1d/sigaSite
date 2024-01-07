@@ -5,6 +5,7 @@ import { Montserrat, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/molecules/Header';
 import Footer from '@/components/molecules/Footer';
+import BannerLGPD from '@/components/atoms/BannerLGPD';
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
 			</head>
 			<body className={`${montserrat.variable} ${roboto.variable}`}>
 				<Header />
+				<BannerLGPD />
 				{children}
 				<Footer />
 			</body>
