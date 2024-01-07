@@ -17,7 +17,7 @@ export default function Hero() {
 					<Heading />
 					<MotionDiv
 						animate={{ opacity: 1, y: 0 }}
-						initial={{ opacity: 0, y: 40 }}
+						initial={{ opacity: 0, y: 20 }}
 						transition={{ duration: 0.3, delay: 0.2 }}>
 						<p className='font-body font-light prose lg:prose-xl lg:mb-5 text-white'>
 							Com serviços que vão de pintura à instalações, estamos
@@ -27,8 +27,8 @@ export default function Hero() {
 					</MotionDiv>
 					<MotionDiv
 						animate={{ opacity: 1, y: 0 }}
-						initial={{ opacity: 0, y: 40 }}
-						transition={{ duration: 0.3, delay: 0.6 }}>
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.3, delay: 0.4 }}>
 						<Button
 							href='https://api.whatsapp.com/send?phone=5511998665500&text=Ol%C3%A1%20,%20estava%20na%20sua%20Landing%20Page%20e%20cliquei%20no%20primeiro%20bot%C3%A3o%20para%20fazer%20um%20or%C3%A7amento!'
 							role='hero'>
@@ -37,10 +37,10 @@ export default function Hero() {
 					</MotionDiv>
 					<MotionDiv
 						animate={{ opacity: 1, y: 0 }}
-						initial={{ opacity: 0, y: 24 }}
+						initial={{ opacity: 0, y: 20 }}
 						transition={{
 							duration: 0.5,
-							delay: 0.8,
+							delay: 0.6,
 							repeat: Infinity,
 							repeatType: 'reverse',
 						}}>
