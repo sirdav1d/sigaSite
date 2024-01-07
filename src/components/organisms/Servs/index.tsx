@@ -38,8 +38,8 @@ export default function Servs() {
 									viewport={{ once: true }}
 									key={index}
 									whileInView={{ opacity: 1, y: 0 }}
-									initial={{ opacity: 0, y: 20 }}
-									transition={{ duration: 0.3, delay: 0.2 * index }}>
+									initial={{ opacity: 0, y: 16 }}
+									transition={{ duration: 0.3, delay: 0.1 * index }}>
 									<Card
 										cover={s.cover}
 										role='servs'

@@ -19,7 +19,7 @@ export default function Hero() {
 						animate={{ opacity: 1, y: 0 }}
 						initial={{ opacity: 0, y: 40 }}
 						transition={{ duration: 0.3, delay: 0.2 }}>
-						<p className='font-body font-light prose lg:prose-xl mb-5 text-white'>
+						<p className='font-body font-light prose lg:prose-xl lg:mb-5 text-white'>
 							Com serviços que vão de pintura à instalações, estamos
 							comprometidos em redefinir limites e transformar seus espaços
 							interiores

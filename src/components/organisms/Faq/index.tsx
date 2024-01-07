@@ -46,8 +46,8 @@ export default function Faq() {
 							key={index}
 							viewport={{ once: true }}
 							whileInView={{ opacity: 1, y: 0 }}
-							initial={{ opacity: 0, y: 40 }}
-							transition={{ duration: 0.5, delay: 0.6 * index }}>
+							initial={{ opacity: 0, y: 20 }}
+							transition={{ duration: 0.3, delay: 0.6 * index }}>
 							<AccordionComponent
 								title={f.title}
 								description={f.description}
