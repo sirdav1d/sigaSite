@@ -16,7 +16,7 @@ const config: Config = {
 				title: ['var(--montserrat-title)'],
 			},
 			backgroundImage: {
-				bgHero: "url('/images/interior-sala.png')",
+				bgHero: "url('/images/interior-sala.webp')",
 			},
 			boxShadow: {
 				card: '-16px -16px 32px 0px #FDFDFD, 20px 20px 40px 0px #BEBEBE',
