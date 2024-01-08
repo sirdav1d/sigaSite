@@ -10,6 +10,10 @@ import {
 	FaLinkedin,
 } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import linkedinImg from '@/../public/icons/redes/linkedin.png';
+import instagramImg from '@/../public/icons/redes/instagram.png';
+import gmailImg from '@/../public/icons/redes/gmail.png';
+import whatsappImg from '@/../public/icons/redes/whatsapp.png';
 
 export default function Footer() {
 	return (
@@ -34,28 +38,44 @@ export default function Footer() {
 								href='https://www.instagram.com/sigareformasepinturas'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<FaInstagramSquare size={40} />
+								<Image
+									src={instagramImg}
+									alt={'instagram logo'}
+									width={40}
+									height={40}></Image>
 							</a>
 							<a
 								className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 								href='https://www.linkedin.com/in/siga-reformas-e-pinturas'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<FaLinkedin size={40} />
+								<Image
+									src={linkedinImg}
+									alt={'linkedin logo'}
+									width={40}
+									height={40}></Image>
 							</a>
 							<a
 								className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 								href='https://api.whatsapp.com/send?phone=551198665500&text=Ol%C3%A1,%20estava%20na%20sua%20Landing%20Page%20e%20ap%C3%B3s%20ver%20todo%20o%20site,%20gostaria%20de%20fazer%20um%20or%C3%A7amento!'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<FaWhatsappSquare size={40} />
+								<Image
+									src={whatsappImg}
+									alt={'whatsapp logo'}
+									width={40}
+									height={40}></Image>
 							</a>
 							<a
 								className='text-brand-blueSiga-500 hover:text-brand-orangeSiga-500 transition-all duration-300 ease-in-out'
 								href='mailto:sigareformasepinturas@gmail.com?subject=Lead - Landing Page&body=Ol%C3%A1%2C%20estava%20navegando%20na%20sua%20landing%20page%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<MdEmail size={40} />
+								<Image
+									src={gmailImg}
+									alt={'gmail logo'}
+									width={40}
+									height={40}></Image>
 							</a>
 						</div>
 					</div>
