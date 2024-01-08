@@ -11,7 +11,10 @@ export default function Heading() {
 			transition={{ duration: 0.3 }}
 			className='flex'>
 			<h1 className='font-title font-extrabold lg:text-5xl text-3xl text-brand-neutralSiga-100'>
-				Redefinindo Limites,{' '}
+				Redefinindo{' '}
+				<span className='bg-clip-text text-transparent bg-gradient-to-r from-brand-blueSiga-500 to-brand-orangeSiga-500'>
+					Limites,
+				</span>{' '}
 				<span className='bg-clip-text text-transparent bg-gradient-to-r from-brand-blueSiga-500 to-brand-orangeSiga-500'>
 					Transformando
 				</span>{' '}
