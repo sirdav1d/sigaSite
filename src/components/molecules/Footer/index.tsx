@@ -1,19 +1,13 @@
 /** @format */
 
+import gmailImg from '@/../public/icons/redes/gmail.png';
+import instagramImg from '@/../public/icons/redes/instagram.png';
+import linkedinImg from '@/../public/icons/redes/linkedin.png';
+import whatsappImg from '@/../public/icons/redes/whatsapp.png';
 import logo from '@/../public/logos/logoHeader.png';
 import Container from '@/components/atoms/Container';
 import { siteMap } from '@/constants/siteMap';
 import Image from 'next/image';
-import {
-	FaWhatsappSquare,
-	FaInstagramSquare,
-	FaLinkedin,
-} from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import linkedinImg from '@/../public/icons/redes/linkedin.png';
-import instagramImg from '@/../public/icons/redes/instagram.png';
-import gmailImg from '@/../public/icons/redes/gmail.png';
-import whatsappImg from '@/../public/icons/redes/whatsapp.png';
 
 export default function Footer() {
 	return (
