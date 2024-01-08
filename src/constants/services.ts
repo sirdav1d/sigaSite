@@ -54,7 +54,7 @@ export const servs = [
 	{
 		title: 'INSTALAÇÃO DE PISOS',
 		description:
-			'Envolvem a seleção, preparação, montagem e acabamento de revestimentos de pisos utilizando técnicas, materiais e cuidados específicos para garantir superfícies niveladas, duráveis e esteticamente agradáveis.',
+			'Envolvem a seleção, preparação, montagem e acabamento de pisos tais como revestimentos, porcelanatos e vinilico, utilizando técnicas, materiais e cuidados específicos para garantir superfícies niveladas, duráveis e esteticamente agradáveis.',
 		img: serv05,
 		cover: pisosImage,
 	},

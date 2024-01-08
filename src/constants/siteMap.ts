@@ -1,6 +1,5 @@
 /** @format */
 
-
 export const siteMap = [
 	{ text: 'Home', href: '#hero' },
 	{ text: 'Quem Somos', href: '#who' },
@@ -9,7 +8,6 @@ export const siteMap = [
 	{ text: 'Pinturas e Acabamentos', href: '#Elegância' },
 	{ text: 'Reforma Completa', href: '#Conforto' },
 	{ text: 'Galeria de Projetos', href: '#projects' },
-	{ text: 'Depoimentos', href: '#proof' },
 	{ text: 'Perguntas Frequentes', href: '#faq' },
 	{ text: 'Contato', href: '#contact' },
 ];
