@@ -35,9 +35,10 @@ export default function Who() {
 							initial={{ opacity: 0, y: 40 }}
 							transition={{ duration: 0.5, delay: 0.4 }}>
 							<p className='prose lg:prose-lg prose-sm'>
-								Somos uma empresa dedicada à arte de transformar espaços em
+								Quando o assunto é qualidade, prazo e segurança, a SIGA é sempre
+								a melhor escolha. Dedicada à arte de transformar espaços em
 								ambientes que contam histórias únicas. Com uma trajetória
-								marcada por expertise e dedicação, nos tornamos referência no
+								marcada por expertise e seriedade, nos tornamos referência no
 								setor de reformas unindo inovação, qualidade e comprometimento
 								em cada projeto que assumimos. Nossa equipe é composta por
 								profissionais especializados, prontos para entender e
@@ -48,7 +49,7 @@ export default function Who() {
 								<br />
 								<br />
 								Na Siga Reformas e Pinturas, cada espaço é tratado com a
-								singularidade e cuidado que merece, assegurando que cada
+								singularidade e o devido cuidado, assegurando que cada
 								transformação reflita a personalidade e necessidade de quem
 								confia em nosso trabalho. Convidamos você a conhecer mais sobre
 								nossa história e a fazer parte desta jornada de excelência em
