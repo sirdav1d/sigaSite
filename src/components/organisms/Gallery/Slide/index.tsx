@@ -1,11 +1,7 @@
 /** @format */
 
-
-
-import React from 'react';
 import { Image } from 'react-datocms';
 import ModalComponent from '../ModalGallery';
-
 
 interface SlideProps {
 	img: any;
@@ -15,7 +11,7 @@ interface SlideProps {
 
 export default function Slide(props: SlideProps) {
 	return (
-		<div className='lg:w-3/4 flex items-center h-full w-full justify-center rounded-2xl relative object-bottom'>
+		<div className='lg:w-3/4 flex items-center h-full w-full justify-center rounded-2xl relative object-bottom mx-auto'>
 			<Image
 				data={props.img}
 				className='w-full h-full lg:h-auto object-contain'

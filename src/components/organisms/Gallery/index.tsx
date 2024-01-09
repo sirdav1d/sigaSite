@@ -7,8 +7,11 @@ import React from 'react';
 import Slider from './Slider';
 import { TagAnimation } from '@/components/atoms/TagAnimation';
 import { MotionDiv } from '@/components/atoms/MotionDiv';
+import { queryGallery, request } from '@/lib/datoCMS';
 
-export default function Gallery() {
+export default async function Gallery() {
+	const data: any = await request({ query: queryGallery, revalidate: 30 });
+
 	return (
 		<Container
 			id='projects'
@@ -42,7 +45,13 @@ export default function Gallery() {
 						</p>
 					</MotionDiv>
 				</div>
-				<Slider />
+				<Slider
+					subscription={{
+						initialData: data,
+						query: queryGallery,
+						token: process.env.NEXT_DATOCMS_TOKEN,
+					}}
+				/>
 			</div>
 		</Container>
 	);
