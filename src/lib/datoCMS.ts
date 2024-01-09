@@ -5,14 +5,15 @@ import { gql, GraphQLClient } from 'graphql-request';
 interface RequestProps {
 	query: string;
 	variables?: any;
+	revalidate: number;
 }
 
-export function request({ query, variables }: RequestProps) {
+export function request({ query, variables, revalidate }: RequestProps) {
 	const endpoint = process.env.NEXT_DATOCMS_ENDPOINT || '';
 	const token = process.env.NEXT_DATOCMS_TOKEN;
 	const graphQLClient = new GraphQLClient(endpoint, {
 		method: 'POST',
-		next: { revalidate: 30 },
+		next: { revalidate: revalidate },
 		headers: {
 			authorization: `Bearer ${token}`,
 		},

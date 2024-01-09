@@ -3,10 +3,9 @@
 import { Carousel } from 'flowbite-react';
 import Slide from '../Slide';
 import { allGallerySigas, queryGallery, request } from '@/lib/datoCMS';
-import next from 'next';
 
 export default async function Slider() {
-	const data: any = await request({ query: queryGallery });
+	const data: any = await request({ query: queryGallery, revalidate: 30 });
 	const slides = data.allGallerySigas;
 
 	return (

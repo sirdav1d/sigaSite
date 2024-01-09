@@ -1,8 +1,11 @@
 /** @format */
 
+
+
 import React from 'react';
 import { Image } from 'react-datocms';
 import ModalComponent from '../ModalGallery';
+
 
 interface SlideProps {
 	img: any;
