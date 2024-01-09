@@ -6,5 +6,5 @@ export default async function revalidateHandler(
 	req: NextRequest,
 	res: NextResponse,
 ) {
-	return;
+	return res.json();
 }
