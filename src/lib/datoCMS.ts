@@ -12,7 +12,7 @@ export function request({ query, variables }: RequestProps) {
 	const token = process.env.NEXT_DATOCMS_TOKEN;
 	const graphQLClient = new GraphQLClient(endpoint, {
 		method: 'POST',
-		next: { revalidate: 240 },
+		next: { revalidate: 30 },
 		headers: {
 			authorization: `Bearer ${token}`,
 		},
