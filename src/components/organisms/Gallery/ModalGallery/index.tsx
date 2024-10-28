@@ -1,9 +1,9 @@
 /** @format */
 
 'use client';
-import React, { useState } from 'react';
-import { Modal, Button } from 'flowbite-react';
-import { Image } from 'react-datocms';
+import { Modal } from 'flowbite-react';
+import Image from 'next/image';
+import { useState } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 interface ModalComponentProps {
@@ -16,11 +16,11 @@ export default function ModalComponent(props: ModalComponentProps) {
 	const [openModal, setOpenModal] = useState(false);
 	return (
 		<>
-			<Button
-				className='bg-gradient-to-r from-brand-blueSiga-500 bg-[length:380px_400px] w-[60px] p-1 bg-left text-4xl  hover:bg-right transition-all bg-no-repeat cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm duration-300 ease-linear to-brand-orangeSiga-500 rounded active:shadow-lg z-50'
+			<button
+				className='bg-brand-blueSiga-500  p-3 text-4xl cursor-pointer  hover:shadow-md text-brand-neutralSiga-100 font-title font-bold drop-shadow-sm rounded active:shadow-lg z-50 h-fit w-fit'
 				onClick={() => setOpenModal(true)}>
-				<FaExternalLinkAlt size={20} />
-			</Button>
+				<FaExternalLinkAlt size={18} />
+			</button>
 			<Modal
 				position={'center'}
 				size={'5xl'}
@@ -36,8 +36,11 @@ export default function ModalComponent(props: ModalComponentProps) {
 				<Modal.Body className='bg-brand-blueSiga-700 w-full h-full'>
 					<div className='w-full h-[2px] bg-white/10 opacity-15'> </div>
 					<Image
-						data={props.img}
-						className='lg:h-auto w-full rounded-lg h-[300px]'
+						src={props.img}
+						alt={props.title!}
+						width={400}
+						height={250}
+						className='lg:h-auto w-full rounded-lg h-[300px] object-cover'
 					/>
 				</Modal.Body>
 				<Modal.Footer className='bg-brand-blueSiga-700 w-full'>

@@ -8,7 +8,7 @@ interface RequestProps {
 	revalidate: number;
 }
 
-export function request({ query, variables, revalidate }: RequestProps) {
+export async function request({ query, variables, revalidate }: RequestProps) {
 	const endpoint = process.env.NEXT_DATOCMS_ENDPOINT || '';
 	const token = process.env.NEXT_DATOCMS_TOKEN;
 	const graphQLClient = new GraphQLClient(endpoint, {
@@ -28,20 +28,7 @@ export const queryGallery = gql`
 			titleGallerySiga
 			descriptionGallerySiga
 			imageGallerySiga {
-				responsiveImage {
-					alt
-					aspectRatio
-					base64
-					bgColor
-					height
-					sizes
-					src
-					srcSet
-					title
-					webpSrcSet
-					width
-					__typename
-				}
+				url
 			}
 			id
 		}
@@ -52,19 +39,7 @@ export interface allGallerySigas {
 	titleGallerySiga: string;
 	descriptionGallerySiga: string;
 	imageGallerySiga: {
-		responsiveImage: {
-			alt: string | null;
-			aspectRatio: number;
-			base64: string;
-			height: number;
-			sizes: string;
-			src: string;
-			srcSet: string;
-			title: string | null;
-			webpSrcSet: string;
-			width: number;
-			__typename: string;
-		};
+		url: string;
 	};
 	id: string;
 }
