@@ -16,6 +16,8 @@ export async function request({ query, variables, revalidate }: RequestProps) {
 		next: { revalidate: revalidate },
 		headers: {
 			authorization: `Bearer ${token}`,
+			'Content-Type': 'application/json',
+			Accept: 'application/json',
 		},
 	});
 
